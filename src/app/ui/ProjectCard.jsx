@@ -11,14 +11,15 @@ const ProjectCard = ({ project,style }) => {
       </div>
       <p className='text-gray-400'>{project.technologies}</p>
       <p className='text-gray-300'>{project.description}</p>
-      <div className='flex justify-between pt-1'>
-        <a target="_blank" href={project.github_link} className='hover:opacity-70'>
+      <div className='flex justify-between  pt-1'>
+      {project.github_link && <a target="_blank" href={project.github_link} className='hover:opacity-70'>
           <Image src='/github.svg' width={30} height={30} alt="Github Link" />
-        </a>
+        </a> }
+        <div></div>
         {project.live_link && <a target="_blank" href={project.live_link} className='flex flex-row border rounded p-1 hover:opacity-70'>
           <p>Live Demo:</p>
           <OpenInNewIcon />
-        </a>}
+        </a> }
       </div>
     </div>
   );
