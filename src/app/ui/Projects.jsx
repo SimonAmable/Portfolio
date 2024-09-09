@@ -4,49 +4,49 @@ import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import ProjectCard from './ProjectCard'; // Make sure the path to ProjectCard is correct
 
 const Projects = () => {
+  
   const projectItems = [
     {
       title: 'Automating My Job Applications',
       date: 'August 2024',
       technologies: 'Python, Selenium, OPENAI, MSWORD AUTOMATION...',
       description: 'A couple of python scripts that did all of my applications for me.',
-      github: '',
-      demo: '',
+      github_link: 'https://github.com/SimonAmable/automating_my_job_applications',
+      live_link: '',
     },
     {
       title: 'Internships Eh - The Open Source Canadian Internship site.',
       technologies: 'Next.js, TailWind CSS, MUI, Python, CRON, Selenium, MongoDB...',
       description: 'A LIVE FULL-STACK job site made by hand to help me and others in Canada look for internships. Live and free for everyone to use. Click the Live Site button to Check it out now!',
-      github: '',
-      demo: '',
+      github_link: 'https://github.com/SimonAmable/The-Open-Source-Canadian-Coop-Page',
+      live_link: 'https://theopensourcecanadiancooppage.vercel.app/',
     },
     {
       title: 'Real Fall Damage Simulator',
       technologies: 'Python, Flask, Raspberry Pi, IOT',
       description: 'This one is really cool in my opinion, but it\'s hard to explain, so open the GitHub if you\'re interested!',
-      github: '',
-      demo: '',
+      github_link: 'https://github.com/SimonAmable/real_fall_damage_simulator',
+      live_link: '',
     },
     {
       title: 'This Portfolio Website',
       technologies: 'Next.js, TailWind CSS',
       description: 'This website lol. I\'ve been overthinking this one for too long, so I went with this simple design, which I\'ll improve on later. Check out the GitHub to learn more!',
-      github: '',
-      demo: '',
+      github_link: 'https://github.com/SimonAmable/Portfolio',
+      live_link: 'https://SimonAmable.com',
     },
     {
       title: 'Ecommerce Store',
       technologies: 'Wordpress, WooCommerce, Custom CSS',
-      description: 'A fully functional and pixel-perfect custom ecommerce store designed from the client\'s wireframe sketch.',
-      github: '',
-      demo: '',
+      description: 'A fully functional, secure, and pixel-perfect custom ecommerce store designed from the client\'s wireframe sketch.',
+      live_link: 'https://seekingremedy.com/',
     },
     {
       title: 'AI Document Search',
       technologies: 'Jupyter Notebooks, OPENAI API, LangChain, PineCone (Vector Database)',
       description: 'Added documents to a vector database to facilitate querying unique document content with AI, making the most of LLMs semantic search ability to gain an estimated 7-17% increase in subject-related accuracy. Check out the GitHub to learn more!',
-      github: '',
-      demo: '',
+      github_link: '',
+      live_link: '',
     }
   ];
 
