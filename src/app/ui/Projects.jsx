@@ -6,18 +6,11 @@ import ProjectCard from './ProjectCard'; // Make sure the path to ProjectCard is
 const Projects = () => {
   
   const projectItems = [
-    {
-      title: 'Automating My Job Applications',
-      date: 'August 2024',
-      technologies: 'Python, Selenium, OPENAI, MSWORD AUTOMATION...',
-      description: 'A couple of python scripts that did all of my applications for me.',
-      github_link: 'https://github.com/SimonAmable/automating_my_job_applications',
-      live_link: '',
-    },
+
     {
       title: 'Internships Eh - The Open Source Canadian Internship site.',
       technologies: 'Next.js, TailWind CSS, MUI, Python, CRON, Selenium, MongoDB...',
-      description: 'A LIVE FULL-STACK job site made by hand to help me and others in Canada look for internships. Live and free for everyone to use. Click the Live Site button to Check it out now!',
+      description: 'A LIVE FULL-STACK job site made by hand to help me and others in Canada look for internships. Live and 100% free for everyone to use. Click the Live Demo button to Check it out now!',
       github_link: 'https://github.com/SimonAmable/The-Open-Source-Canadian-Coop-Page',
       live_link: 'https://theopensourcecanadiancooppage.vercel.app/',
     },
@@ -29,6 +22,12 @@ const Projects = () => {
       live_link: '',
     },
     {
+      title: 'Ecommerce Store',
+      technologies: 'Wordpress, WooCommerce, Custom CSS',
+      description: 'A fully functional, secure, and pixel-perfect custom ecommerce store designed from the client\'s wireframe sketch.',
+      live_link: 'https://seekingremedy.com/',
+    },
+    {
       title: 'This Portfolio Website',
       technologies: 'Next.js, TailWind CSS',
       description: 'This website lol. I\'ve been overthinking this one for too long, so I went with this simple design, which I\'ll improve on later. Check out the GitHub to learn more!',
@@ -36,10 +35,12 @@ const Projects = () => {
       live_link: 'https://SimonAmable.com',
     },
     {
-      title: 'Ecommerce Store',
-      technologies: 'Wordpress, WooCommerce, Custom CSS',
-      description: 'A fully functional, secure, and pixel-perfect custom ecommerce store designed from the client\'s wireframe sketch.',
-      live_link: 'https://seekingremedy.com/',
+      title: 'Automating My Job Applications',
+      // date: 'August 2024',
+      technologies: 'Python, Selenium, OPENAI, MSWORD AUTOMATION...',
+      description: 'A couple of python scripts that did all of my applications for me.',
+      github_link: 'https://github.com/SimonAmable/automating_my_job_applications',
+      live_link: '',
     },
     {
       title: 'AI Document Search',
