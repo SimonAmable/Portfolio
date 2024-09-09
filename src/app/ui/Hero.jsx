@@ -20,7 +20,7 @@ const Hero = () => {
         />
       </div>
       <div className=' '>
-        <h6 className='pb-5 text-3xl font-bold'>Hi! I'm Simon!</h6>
+        <h6 className='pb-5 text-3xl font-bold'>Hi! Im Simon!</h6>
 
           <div className='text-xl text-gray-100 '>I like to<FlipWords words={words} /></div>
           
