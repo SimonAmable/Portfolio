@@ -8,13 +8,13 @@ const Hero = () => {
   const words = ["Automate Stuff",  "Learn New Things", "Build robots", "Play Volleyball", "Make Jewerly","CREATE!"];
 
   return (
-    <div className='flex flex-row w-full  items-center justify-evenly bg-black text-white p-5'>
+    <div className='fade-up flex flex-row w-full  items-center justify-evenly bg-black text-white p-5'>
       <div>
       <Image
         src="/construction_man.gif"
         width={300}
         height={300}
-        className='text-white fill-white decoration-white'
+        className=' text-white fill-white decoration-white'
         alt="Picture of the author" 
         unoptimized={true}
         />
