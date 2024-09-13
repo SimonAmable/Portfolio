@@ -3,23 +3,21 @@ import Image from 'next/image';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import ProjectCard from './ProjectCard'; // Make sure the path to ProjectCard is correct
 
+
 const Projects = () => {
   
   const projectItems = [
-
+    {
+      title: '����������������',
+      technologies: '��������������������',
+      description: '��������������������',
+    },
     {
       title: 'Internships Eh - The Open Source Canadian Internship site.',
       technologies: 'Next.js, TailWind CSS, MUI, Python, CRON, Selenium, MongoDB...',
       description: 'A LIVE FULL-STACK job site made by hand to help me and others in Canada look for internships. Live and 100% free for everyone to use. Click the Live Demo button to Check it out now!',
       github_link: 'https://github.com/SimonAmable/The-Open-Source-Canadian-Coop-Page',
       live_link: 'https://theopensourcecanadiancooppage.vercel.app/',
-    },
-    {
-      title: 'Real Fall Damage Simulator',
-      technologies: 'Python, Flask, Raspberry Pi, IOT',
-      description: 'This one is really cool in my opinion, but it\'s hard to explain, so open the GitHub if you\'re interested!',
-      github_link: 'https://github.com/SimonAmable/real_fall_damage_simulator',
-      live_link: '',
     },
     {
       title: 'Ecommerce Store',
@@ -35,8 +33,15 @@ const Projects = () => {
       live_link: 'https://SimonAmable.com',
     },
     {
+      title: 'Real Fall Damage Simulator',
+      technologies: 'Python, Flask, Raspberry Pi, IOT',
+      description: 'This one is really cool in my opinion, but it\'s hard to explain, so open the GitHub if you\'re interested!',
+      github_link: 'https://github.com/SimonAmable/real_fall_damage_simulator',
+      live_link: '',
+    },
+    {
       title: 'Automating My Job Applications',
-      // date: 'August 2024',
+      // date: 'August 2024', works but dosent look that good for now
       technologies: 'Python, Selenium, OPENAI, MSWORD AUTOMATION...',
       description: 'A couple of python scripts that did all of my applications for me.',
       github_link: 'https://github.com/SimonAmable/automating_my_job_applications',
@@ -53,7 +58,6 @@ const Projects = () => {
 
   return (
     <div id="projects" className='text-white w-full min-h-96 px-5 '>
-      <p className=' text-4xl font-semibold mb-10'>My Projects</p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-white">
         {projectItems.map((projectItem, index) => (
