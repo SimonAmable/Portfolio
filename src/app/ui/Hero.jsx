@@ -5,11 +5,11 @@ import { FlipWords } from "../../components/ui/flip-words"
 
 
 const Hero = () => {
-  const words = ["Automate Stuff",  "Learn New Things", "Build robots", "Play Volleyball", "Make Jewerly","CREATE!"];
+  const words = ["Automate Stuff", "Build Robots","Make Website", "Play Volleyball!!!", "Make Jewellery", "Learn New Things","CREATE!!!!!!"];
 
   return (
     <div className='fade-up flex flex-row w-full  items-center justify-evenly bg-black text-white p-5'>
-      <div>
+      <div className='flex flex-col items-center'>
       <Image
         src="/construction_man.gif"
         width={300}
@@ -18,11 +18,13 @@ const Hero = () => {
         alt="Picture of the author" 
         unoptimized={true}
         />
+        <p className=' text-lg lg:text-4xl font-semibold mb-10'>My Projects</p>
+
       </div>
       <div className=' '>
         <h6 className='pb-5 text-3xl font-bold'>Hi! Im Simon!</h6>
 
-          <div className='text-xl text-gray-100 '>I like to<FlipWords words={words} /></div>
+          <div className='text-xl text-gray-100 '>&nbsp;I like to<FlipWords words={words} /></div>
           
 
         <p className='text-xl text-gray-400 '> <br/>Scroll down to checkout my favorite projects! </p>
