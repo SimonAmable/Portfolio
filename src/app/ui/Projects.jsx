@@ -42,13 +42,13 @@ const Projects = () => {
       github_link: 'https://github.com/SimonAmable/automating_my_job_applications',
       live_link: '',
     },
-    {
-      title: 'AI Document Search',
-      technologies: 'Jupyter Notebooks, OPENAI API, LangChain, PineCone (Vector Database)',
-      description: 'Added documents to a vector database to facilitate querying unique document content with AI, making the most of LLMs semantic search ability to gain an estimated 7-17% increase in subject-related accuracy. Check out the GitHub to learn more!',
-      github_link: '',
-      live_link: '',
-    }
+    // {
+    //   title: 'AI Document Search',
+    //   technologies: 'Jupyter Notebooks, OPENAI API, LangChain, PineCone (Vector Database)',
+    //   description: 'Added documents to a vector database to facilitate querying unique document content with AI, making the most of LLMs semantic search ability to gain an estimated 7-17% increase in subject-related accuracy. Check out the GitHub to learn more!',
+    //   github_link: '',
+    //   live_link: '',
+    // }
   ];
 
   return (
