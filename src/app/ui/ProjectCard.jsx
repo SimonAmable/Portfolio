@@ -12,7 +12,7 @@ const ProjectCard = ({ project,style }) => {
       <p className='text-gray-400'>{project.technologies}</p>
       <p className='text-gray-300'>{project.description}</p>
       <div className='flex justify-between  pt-1'>
-      {project.github_link && <a target="_blank" href={project.github_link} className='hover:opacity-70 transition-transform duration-200 transform hover:scale-110'>
+      {project.github_link && <a target="_blank" href={project.github_link} className='hover:opacity-70 transition-transform duration-80 transform hover:scale-125'>
           <Image src='/github.svg' width={30} height={30} alt="Github Link" />
         </a> }
         <div></div>
