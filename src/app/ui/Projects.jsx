@@ -8,16 +8,16 @@ const Projects = () => {
   
   const projectItems = [
     {
-      title: '����������������',
-      technologies: '��������������������',
-      description: '��������������������',
+      title: '����.��',
+      technologies: '������,������,���...',
+      description: '� ���� ����� ��� � ����',
     },
     {
       title: 'Internships Eh - The Open Source Canadian Internship site.',
       technologies: 'Next.js, TailWind CSS, MUI, Python, CRON, Selenium, MongoDB...',
-      description: 'A LIVE FULL-STACK job site made by hand to help me and others in Canada look for internships. Live and 100% free for everyone to use. Click the Live Demo button to Check it out now!',
-      github_link: 'https://github.com/SimonAmable/The-Open-Source-Canadian-Coop-Page',
-      live_link: 'https://theopensourcecanadiancooppage.vercel.app/',
+      description: 'A LIVE FULL-STACK job site with over 1000 internships updated daily. Created to help everyone in Canada to have equally inclusion for . Live and 100% free for everyone to use. Click the Live Demo button to Check it out now!',
+      github_link: 'https://github.com/SimonAmable/INTERN-CANADA',
+      live_link: 'https://www.interncanada.com/',
     },
     {
       title: 'Ecommerce Store',
@@ -28,9 +28,9 @@ const Projects = () => {
     {
       title: 'This Portfolio Website',
       technologies: 'Next.js, TailWind CSS',
-      description: 'This website lol. I\'ve been overthinking this one for too long, so I went with this simple design, which I\'ll improve on later. Check out the GitHub to learn more!',
+      description: 'This website.',
       github_link: 'https://github.com/SimonAmable/Portfolio',
-      live_link: 'https://SimonAmable.com',
+      live_link: '',
     },
     {
       title: 'Real Fall Damage Simulator',
@@ -43,7 +43,7 @@ const Projects = () => {
       title: 'Automating My Job Applications',
       // date: 'August 2024', works but dosent look that good for now
       technologies: 'Python, Selenium, OPENAI, MSWORD AUTOMATION...',
-      description: 'A couple of python scripts that did all of my applications for me.',
+      description: 'A couple of python scripts that automated ~200 job application.',
       github_link: 'https://github.com/SimonAmable/automating_my_job_applications',
       live_link: '',
     },
