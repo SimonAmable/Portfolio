@@ -5,7 +5,7 @@ import { FlipWords } from "../../components/ui/flip-words"
 
 
 const Hero = () => {
-  const words = ["Automate Stuff", "Build Robots","Make Website", "Play Volleyball!!!", "Make Jewellery", "Learn New Things","CREATE!!!!!!"];
+  const words = ["Code in Python","Make Website",  "Sometimes Build Robots","Play Volleyball!!!", "Learn New Things", "CREATE!!!!!!"];
 
   return (
     <div className='fade-up flex flex-row w-full  items-center justify-evenly bg-black text-white p-5'>
