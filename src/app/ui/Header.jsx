@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const Header = () => {
   return (
-    <div className=' flex justify-between gap-5 px-12 py-10 bg-black text-white '>
+    <div className=' flex justify-between gap-5 px-8 py-5 bg-black text-white '>
     <a href='https://github.com/SimonAmable' target='_blank' ><Image
         src="/github.svg"
         width={40}
@@ -14,9 +14,9 @@ const Header = () => {
         alt="Picture of the author"
         /></a>
         <div className='flex flex-row gap-10 font-mono font-bold text-l items-center lg:text-3xl lg:gap-5'>
-            <Link href='/'><p>ABOUT</p> </Link>
-            <Link href='#projects'><p>PROJECTS</p> </Link>
-            <Link href='#footer'><p>CONTACT</p> </Link>
+            <Link href='/' className='hover:underline'><p>ABOUT</p> </Link>
+            <Link href='#projects' className='hover:underline'><p>PROJECTS</p> </Link>
+            <Link href='#footer' className='hover:underline'><p>CONTACT</p> </Link>
             
         </div>
     </div>
