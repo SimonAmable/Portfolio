@@ -8,7 +8,15 @@ const Projects = () => {
   
   const projectItems = [
     {
-      title: '����.��',
+      title: 'MySuccessAutomation - Automating the job application process',
+      technologies: 'Python, Web Automation, AI, MS Word Auromation,...',
+      description: 'Fill out forms and then run 1 python script to land a coop in under an hour by automating you job applications with Arificial intellegenge and web automation!',
+      stats:" | ~200 internship applied to |",
+      github_link: 'https://github.com/SimonAmable/MySuccessAutomation',
+      live_link: 'https://github.com/SimonAmable/MySuccessAutomation',
+    },
+    {
+      title: '����������.��',
       technologies: '������,������,���...',
       description: '� ���� ����� ��� � ����',
     },
@@ -16,6 +24,7 @@ const Projects = () => {
       title: 'Internships Eh - The Open Source Canadian Internship site.',
       technologies: 'Next.js, TailWind CSS, MUI, Python, CRON, Selenium, MongoDB...',
       description: 'A LIVE FULL-STACK job site with over 1000 internships updated daily. Created to help everyone in Canada to have equally inclusion for . Live and 100% free for everyone to use. Click the Live Demo button to Check it out now!',
+      stats:" | ~700 internships | ~50 daily views |",
       github_link: 'https://github.com/SimonAmable/INTERN-CANADA',
       live_link: 'https://www.interncanada.com/',
     },

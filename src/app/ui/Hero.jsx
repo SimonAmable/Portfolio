@@ -18,16 +18,17 @@ const Hero = () => {
         alt="Picture of the author" 
         unoptimized={true}
         />
-        <p className=' text-lg lg:text-4xl font-semibold mb-10'>My Projects</p>
+        {/* <p className=' text-lg lg:text-4xl font-semibold mb-10'>My Projects</p> */}
 
       </div>
       <div className=' '>
         <h6 className='pb-5 text-3xl font-bold'>Hi! Im Simon!</h6>
 
-          <div className='text-xl text-gray-100 '>&nbsp;I like to<FlipWords words={words} /></div>
+          {/* <div className='text-xl text-gray-100 '>&nbsp;I like to<FlipWords words={words} /></div> */}
           
 
         <p className='text-xl text-gray-400 '> <br/>Scroll down to checkout my favorite projects! </p>
+
       </div>
       
     </div>
