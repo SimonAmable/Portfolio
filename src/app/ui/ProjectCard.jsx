@@ -19,6 +19,10 @@ const ProjectCard = ({ project,style }) => {
         <div></div>
         {project.live_link && <a target="_blank" href={project.live_link} className='flex flex-row border rounded p-1  hover:text-black hover:bg-white transition-colors duration-200'>
           <p>Live Website:</p>
+        </a> }
+        <div></div>
+        {project.live_link && <a target="_blank" href={project.live_link} className='flex flex-row border rounded p-1  hover:text-black hover:bg-white transition-colors duration-200'>
+          <p>Live Website:</p>
           <OpenInNewIcon />
         </a> }
       </div>

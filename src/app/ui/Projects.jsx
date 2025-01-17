@@ -4,7 +4,9 @@ import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import ProjectCard from './ProjectCard'; // Make sure the path to ProjectCard is correct
 
 
+
 const Projects = () => {
+  
   
   const projectItems = [
     {
@@ -33,10 +35,24 @@ const Projects = () => {
       technologies: 'Wordpress, WooCommerce, Custom CSS',
       description: 'A fully functional, secure, and pixel-perfect custom ecommerce store designed from the client\'s wireframe sketch.',
       live_link: 'https://seekingremedy.com/',
+      title: 'Ecommerce Store',
+      technologies: 'Wordpress, WooCommerce, Custom CSS',
+      description: 'A fully functional, secure, and pixel-perfect custom ecommerce store designed from the client\'s wireframe sketch.',
+      live_link: 'https://seekingremedy.com/',
     },
     {
       title: 'This Portfolio Website',
       technologies: 'Next.js, TailWind CSS',
+      description: 'This website.',
+      github_link: 'https://github.com/SimonAmable/Portfolio',
+      live_link: '',
+    },
+    {
+      title: 'Real Fall Damage Simulator',
+      technologies: 'Python, Flask, Raspberry Pi, IOT',
+      description: 'This one is really cool in my opinion, but it\'s hard to explain, so open the GitHub if you\'re interested!',
+      github_link: 'https://github.com/SimonAmable/real_fall_damage_simulator',
+      live_link: '',
       description: 'This website.',
       github_link: 'https://github.com/SimonAmable/Portfolio',
       live_link: '',
@@ -55,7 +71,20 @@ const Projects = () => {
       description: 'A couple of python scripts that automated ~200 job application.',
       github_link: 'https://github.com/SimonAmable/automating_my_job_applications',
       live_link: '',
+      title: 'Automating My Job Applications',
+      // date: 'August 2024', works but dosent look that good for now
+      technologies: 'Python, Selenium, OPENAI, MSWORD AUTOMATION...',
+      description: 'A couple of python scripts that automated ~200 job application.',
+      github_link: 'https://github.com/SimonAmable/automating_my_job_applications',
+      live_link: '',
     },
+    // {
+    //   title: 'AI Document Search',
+    //   technologies: 'Jupyter Notebooks, OPENAI API, LangChain, PineCone (Vector Database)',
+    //   description: 'Added documents to a vector database to facilitate querying unique document content with AI, making the most of LLMs semantic search ability to gain an estimated 7-17% increase in subject-related accuracy. Check out the GitHub to learn more!',
+    //   github_link: '',
+    //   live_link: '',
+    // }
     // {
     //   title: 'AI Document Search',
     //   technologies: 'Jupyter Notebooks, OPENAI API, LangChain, PineCone (Vector Database)',
