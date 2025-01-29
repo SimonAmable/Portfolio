@@ -36,9 +36,6 @@ const Projects = () => {
       description: 'A fully functional, secure, and pixel-perfect custom ecommerce store designed from the client\'s wireframe sketch.',
       live_link: 'https://seekingremedy.com/',
       title: 'Ecommerce Store',
-      technologies: 'Wordpress, WooCommerce, Custom CSS',
-      description: 'A fully functional, secure, and pixel-perfect custom ecommerce store designed from the client\'s wireframe sketch.',
-      live_link: 'https://seekingremedy.com/',
     },
     {
       title: 'This Portfolio Website',
@@ -47,20 +44,11 @@ const Projects = () => {
       github_link: 'https://github.com/SimonAmable/Portfolio',
       live_link: '',
     },
+
     {
       title: 'Real Fall Damage Simulator',
       technologies: 'Python, Flask, Raspberry Pi, IOT',
-      description: 'This one is really cool in my opinion, but it\'s hard to explain, so open the GitHub if you\'re interested!',
-      github_link: 'https://github.com/SimonAmable/real_fall_damage_simulator',
-      live_link: '',
-      description: 'This website.',
-      github_link: 'https://github.com/SimonAmable/Portfolio',
-      live_link: '',
-    },
-    {
-      title: 'Real Fall Damage Simulator',
-      technologies: 'Python, Flask, Raspberry Pi, IOT',
-      description: 'This one is really cool in my opinion, but it\'s hard to explain, so open the GitHub if you\'re interested!',
+      description: 'A Python-based computer vision program that processes real-time game state data from "Chained Together" to trigger an Electic Musclusar Stimulus (EMS) machine via a Raspberry Pi.',
       github_link: 'https://github.com/SimonAmable/real_fall_damage_simulator',
       live_link: '',
     },
@@ -68,15 +56,11 @@ const Projects = () => {
       title: 'Automating My Job Applications',
       // date: 'August 2024', works but dosent look that good for now
       technologies: 'Python, Selenium, OPENAI, MSWORD AUTOMATION...',
-      description: 'A couple of python scripts that automated ~200 job application.',
+      description: 'A couple of python scripts that automate the job application process. ',
       github_link: 'https://github.com/SimonAmable/automating_my_job_applications',
       live_link: '',
       title: 'Automating My Job Applications',
       // date: 'August 2024', works but dosent look that good for now
-      technologies: 'Python, Selenium, OPENAI, MSWORD AUTOMATION...',
-      description: 'A couple of python scripts that automated ~200 job application.',
-      github_link: 'https://github.com/SimonAmable/automating_my_job_applications',
-      live_link: '',
     },
     // {
     //   title: 'AI Document Search',
