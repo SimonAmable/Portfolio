@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+ 
 
 // import SmallContact from '../ui/SmallContact';
 
@@ -36,57 +37,84 @@ const ContactPage = () => {
   };
 
   return (
-    <div className=' p-2 flex flex-col w-full items-center gap-3'>
-      <h1 className='py-5 font-bold text-white text-3xl'>Contact Me </h1>
+    <div className="flex w-full items-center justify-center py-16 px-4 bg-black">
       {submitted ? (
-        <div className='min-w-60'>
-          <p className='text-center'>Thank you for your message!!!</p>
-          <div style={{ width: '100%', height: 0, paddingBottom: '83%', position: 'relative' }}>
-            <iframe
-              src="https://giphy.com/embed/i21tixUQEE7TEqwmYa"
-              width="100%"
-              height="100%"
-              style={{ position: 'absolute' }}
-              className="giphy-embed"
-              allowFullScreen
-            ></iframe>
+        <div className="w-full max-w-md p-6 rounded-2xl border border-white/10 bg-black">
+          <div className="w-full text-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.5"
+              className="mx-auto mb-3 h-10 w-10 text-green-400"
+              aria-hidden="true"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4" />
+              <path strokeLinecap="round" strokeLinejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20z" />
+            </svg>
+            <h2 className="text-xl font-medium text-white">Message sent</h2>
+            <p className="mt-1 text-sm text-white/60">Thanks! I’ll get back to you soon.</p>
+            <button
+              type="button"
+              onClick={() => setSubmitted(false)}
+              className="mt-5 inline-flex items-center justify-center rounded-xl bg-white px-4 py-2 text-sm font-medium text-black transition hover:bg-white/90 focus:outline-none focus:ring-2 focus:ring-white/30"
+            >
+              Send another
+            </button>
           </div>
-          <p><a href="https://giphy.com/gifs/theoffice-nbc-the-office-tv-i21tixUQEE7TEqwmYa">via GIPHY</a></p>
         </div>
       ) : (
-        <form onSubmit={handleSubmit} className='flex flex-col px-16 gap-2 items-center w-full justify-center'>
-          <input 
-            type="text" 
-            name="name" 
-            value={formData.name} 
-            onChange={handleChange} 
-            placeholder="Name" 
-            required
-            className='border-gray-400 border-2 rounded-3xl p-3 w-full '
-            
-          />
-          <input 
-            type="email" 
-            name="email" 
-            value={formData.email} 
-            onChange={handleChange} 
-            placeholder="Email" 
-            className='border-gray-400 border-2 rounded-3xl p-3 w-full '
-            required 
-          />
-          <textarea 
-            name="message" 
-            value={formData.message} 
-            onChange={handleChange} 
-            placeholder="Message" 
-            className='border-gray-400 border-2 rounded-3xl p-4 min-h-32 w-full'
-            required 
-          />
-          <div className='flex w-full justify-start items-baseline'>
-            <button type="submit" className='border-2 border-white text-white font-semibold rounded-3xl px-3 py-1 transform transition-transform duration-300 hover:scale-110'>Send</button>
+        <div className="w-full max-w-md p-6 rounded-2xl border border-white/10 bg-black">
+          <div className="w-full">
+            <h1 className="mb-4 text-2xl font-semibold text-white">Contact Me</h1>
+            <form onSubmit={handleSubmit} className="flex flex-col gap-3">
+              <label htmlFor="name" className="sr-only">Name</label>
+              <input
+                id="name"
+                type="text"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                placeholder="Name"
+                required
+                className="w-full rounded-xl border border-white/15 bg-transparent px-4 py-3 text-white placeholder-white/40 outline-none transition focus:border-white/30 focus:ring-2 focus:ring-white/20"
+              />
+
+              <label htmlFor="email" className="sr-only">Email</label>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                placeholder="Email"
+                required
+                className="w-full rounded-xl border border-white/15 bg-transparent px-4 py-3 text-white placeholder-white/40 outline-none transition focus:border-white/30 focus:ring-2 focus:ring-white/20"
+              />
+
+              <label htmlFor="message" className="sr-only">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                placeholder="Message"
+                required
+                className="min-h-28 w-full resize-y rounded-xl border border-white/15 bg-transparent px-4 py-3 text-white placeholder-white/40 outline-none transition focus:border-white/30 focus:ring-2 focus:ring-white/20"
+              />
+
+              {error && <p className="mt-1 text-sm text-red-400">{error}</p>}
+
+              <button
+                type="submit"
+                className="mt-2 inline-flex items-center justify-center rounded-xl bg-white px-4 py-2 font-medium text-black transition hover:bg-white/90 focus:outline-none focus:ring-2 focus:ring-white/30"
+              >
+                Send
+              </button>
+            </form>
           </div>
-          {error && <p style={{ color: 'red' }}>{error}</p>}
-        </form>
+        </div>
       )}
     </div>
   );

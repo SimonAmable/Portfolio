@@ -1,37 +1,55 @@
+"use client"
 import React from 'react'
-import Image from 'next/image'
-
-import { FlipWords } from "../../components/ui/flip-words"
-
+import { FlipWords } from "@/components/ui/flip-words"
+import { BlurFade } from "@/components/magicui/blur-fade"
+import { ChevronDown } from "lucide-react"
+import { Button } from "@/components/ui/button"
 
 const Hero = () => {
-  const words = ["Code in Python","Make Website",  "Sometimes Build Robots","Play Volleyball!!!", "Learn New Things", "CREATE!!!!!!"];
+  const words = [
+    "I build full stack web apps",
+    "I automate workflows",
+    "I love to learn new things, currently I'm learning about agentic AI!",
+
+    "I play volleyball",
+    "I like to watch anime (I'm currently up to date on One Piece!)"
+  ]
 
   return (
-    <div className='fade-up flex flex-row w-full  items-center justify-evenly bg-black text-white p-5'>
-      <div className='flex flex-col items-center'>
-      <Image
-        src="/construction_man.gif"
-        width={300}
-        height={300}
-        className=' text-white fill-white decoration-white'
-        alt="Picture of the author" 
-        unoptimized={true}
-        />
-        {/* <p className=' text-lg lg:text-4xl font-semibold mb-10'>My Projects</p> */}
-
-      </div>
-      <div className=' '>
-        <h6 className='pb-5 text-3xl font-bold'>Hi! Im Simon!</h6>
-
-          {/* <div className='text-xl text-gray-100 '>&nbsp;I like to<FlipWords words={words} /></div> */}
-          
-
-        <p className='text-xl text-gray-400 '> <br/>Scroll down to checkout my favorite projects! </p>
-
-      </div>
+    <section className="fade-up relative w-full px-6 pt-28  flex items-center justify-center text-white">
+      {/* Subtle spotlight behind text */}
       
-    </div>
+
+      <div className="max-w-3xl text-center py-32">
+        <BlurFade inView direction="up" delay={0.2}>
+          <h1 className="text-5xl md:text-8xl font-bold tracking-tight">
+            HI, I&apos;M SIMON
+          </h1>
+        </BlurFade>
+        <BlurFade inView direction="up" delay={1}>
+          <div className="mt-4 text-lg md:text-xl text-white/80 min-h-[3rem] md:min-h-[5rem] flex items-center justify-center">
+            <FlipWords words={words} duration={8000} className="px-0 text-white text-center" />
+          </div>
+
+          {/* <p className="mt-4 text-base md:text-lg text-white/60">
+            I'm currently working on learning agentic systems and building projects to help me learn.
+          </p> */}
+
+          <p className="mt-4 text-base md:text-lg text-white/60">
+            Scroll down to check out my latest projects.
+          </p>
+          <div className="mt-8">
+            <Button asChild className="bg-white/10 hover:bg-white/20 text-white border border-white/20 hover:border-white/30 px-6 py-3 rounded-full transition-all">
+              <a href="#projects" className="flex items-center gap-2">
+                View Projects
+                <ChevronDown className="w-4 h-4" />
+              </a>  
+            </Button>
+          </div>
+          
+        </BlurFade>
+      </div>
+    </section>
   )
 }
 

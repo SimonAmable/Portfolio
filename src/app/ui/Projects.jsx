@@ -1,93 +1,84 @@
 import React from 'react';
-import Image from 'next/image';
-import OpenInNewIcon from '@mui/icons-material/OpenInNew';
-import ProjectCard from './ProjectCard'; // Make sure the path to ProjectCard is correct
-
-
+import ProjectCard from './ProjectCard';
+import { BlurFade } from "@/components/magicui/blur-fade";
 
 const Projects = () => {
-  
-  
   const projectItems = [
     {
-      title: 'MySuccessAutomation - Automating the job application process',
-      technologies: 'Python, Web Automation, AI, MS Word Auromation,...',
-      description: 'Fill out forms and then run 1 python script to land a coop in under an hour by automating you job applications with Arificial intellegenge and web automation!',
-      stats:" | ~200 internship applied to |",
-      github_link: 'https://github.com/SimonAmable/MySuccessAutomation',
-      live_link: 'https://github.com/SimonAmable/MySuccessAutomation',
+      title: 'EzApply',
+      caption:
+        'A web app that streamlines the job application process for students by creating customized cover letters and resumes grounded with simple RAG with real user data.',
+      image: '/ez-apply-preview.png',
+      live_link: 'https://ezapply-ai.vercel.app/',
+      github_link: '',
+      isWebsite: true,
     },
     {
-      title: '����������.��',
-      technologies: '������,������,���...',
-      description: '� ���� ����� ��� � ����',
+      title: 'EzApply Chrome Extension',
+      caption:
+        'A chrome extension that streamlines the job application process for students by automatically filling out forms and creating application with AI.',
+      image: '/ez-apply-chome-preview-2.png',
+      live_link: 'https://ezapply-ai.vercel.app/automate',
+      github_link: '',
+      isWebsite: true,
     },
     {
-      title: 'Internships Eh - The Open Source Canadian Internship site.',
-      technologies: 'Next.js, TailWind CSS, MUI, Python, CRON, Selenium, MongoDB...',
-      description: 'A LIVE FULL-STACK job site with over 1000 internships updated daily. Created to help everyone in Canada to have equally inclusion for . Live and 100% free for everyone to use. Click the Live Demo button to Check it out now!',
-      stats:" | ~700 internships | ~50 daily views |",
-      github_link: 'https://github.com/SimonAmable/INTERN-CANADA',
+      title: 'Intern Canada',
+      caption:
+        'A comprehensive internship platform connecting students with opportunities across Canada, Peaked at 100+ daily active users.',
+      image: '/internshipseh.png',
       live_link: 'https://www.interncanada.com/',
+      github_link: 'https://github.com/SimonAmable/INTERN-CANADA',
+      isWebsite: true,
     },
     {
-      title: 'Ecommerce Store',
-      technologies: 'Wordpress, WooCommerce, Custom CSS',
-      description: 'A fully functional, secure, and pixel-perfect custom ecommerce store designed from the client\'s wireframe sketch.',
+      title: 'MySuccessAutomation',
+      caption:
+        'A tool to automate your job search and application process.',
+      image: '/github.svg',
+      live_link: '',
+      github_link: 'https://github.com/SimonAmable/MySuccessAutomation',
+      isWebsite: false,
+    },
+    {
+      title: 'Seeking Remedy - E-commerce store',
+      caption:
+        'A e-commerce store made in wordpress with woocommerce so help my friends sells clothing and accessories. Globally accessible in all languages, easy to manage, and scalable.',
+      image: '/seeking_remedy_preview.png',
       live_link: 'https://seekingremedy.com/',
-      title: 'Ecommerce Store',
+      github_link: '',
+      isWebsite: true,
     },
     {
-      title: 'This Portfolio Website',
-      technologies: 'Next.js, TailWind CSS',
-      description: 'This website.',
-      github_link: 'https://github.com/SimonAmable/Portfolio',
+      title: 'EVNAV - Android Mobile App',
+      caption:
+        'A andoroid mobile app developed in kotlin that allows users to view and naviage to nearby EV charging history via Google Maps API, allong with other features like charging station availability, history, stataistics, etc.',
+      image: '/github.svg',
       live_link: '',
-    },
-
-    {
-      title: 'Real Fall Damage Simulator',
-      technologies: 'Python, Flask, Raspberry Pi, IOT',
-      description: 'A Python-based computer vision program that processes real-time game state data from "Chained Together" to trigger an Electic Musclusar Stimulus (EMS) machine via a Raspberry Pi.',
-      github_link: 'https://github.com/SimonAmable/real_fall_damage_simulator',
-      live_link: '',
-    },
-    {
-      title: 'Automating My Job Applications',
-      // date: 'August 2024', works but dosent look that good for now
-      technologies: 'Python, Selenium, OPENAI, MSWORD AUTOMATION...',
-      description: 'A couple of python scripts that automate the job application process. ',
-      github_link: 'https://github.com/SimonAmable/automating_my_job_applications',
-      live_link: '',
-      title: 'Automating My Job Applications',
-      // date: 'August 2024', works but dosent look that good for now
+      github_link: 'https://github.com/SimonAmable/ADVANCED_EV_UX',
+      isWebsite: false,
     },
     // {
-    //   title: 'AI Document Search',
-    //   technologies: 'Jupyter Notebooks, OPENAI API, LangChain, PineCone (Vector Database)',
-    //   description: 'Added documents to a vector database to facilitate querying unique document content with AI, making the most of LLMs semantic search ability to gain an estimated 7-17% increase in subject-related accuracy. Check out the GitHub to learn more!',
-    //   github_link: '',
-    //   live_link: '',
-    // }
-    // {
-    //   title: 'AI Document Search',
-    //   technologies: 'Jupyter Notebooks, OPENAI API, LangChain, PineCone (Vector Database)',
-    //   description: 'Added documents to a vector database to facilitate querying unique document content with AI, making the most of LLMs semantic search ability to gain an estimated 7-17% increase in subject-related accuracy. Check out the GitHub to learn more!',
-    //   github_link: '',
-    //   live_link: '',
-    // }
+    //   title: 'Uncanny Edits - Web App',
+    //   caption:
+    //     'A web app developed in react that allows users to easily edit images using SOTA AI models like gemeni-2.5-flash (Nano-banana) to create realistic professional photoshop level edits with ease.',
+    //   image: '/github.svg',
+    //   live_link: 'https://ai-image-edit-github.vercel.app/',
+    //   github_link: 'https://github.com/SimonAmable/ai_image_edit_github',
+    //   isWebsite: false,
+    // },
   ];
 
   return (
-    <div id="projects" className='text-white w-full min-h-96 px-5 '>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-white">
+    <section id="projects" className="w-full px-5 md:px-6 lg:px-20 xl:px-40">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 lg:gap-12">
         {projectItems.map((projectItem, index) => (
-          <ProjectCard key={index} project={projectItem} style={{ animationDelay: `${index * 1}s` }} // Apply animation delay based on index
-/>
+          <BlurFade key={index} direction="up" delay={index * 0.3 + 1.5}>
+            <ProjectCard project={projectItem} />
+          </BlurFade>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

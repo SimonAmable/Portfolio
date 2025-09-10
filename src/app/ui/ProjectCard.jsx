@@ -1,32 +1,61 @@
 import React from 'react';
 import Image from 'next/image';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
+ 
 
-const ProjectCard = ({ project,style }) => {
+const ProjectCard = ({ project }) => {
+  const mainHref = project.live_link || project.github_link || undefined;
+  const isLive = Boolean(project.live_link);
+  const Wrapper = mainHref ? 'a' : 'div';
+  const aspectClass = 'aspect-[3/2]';
+
   return (
-    <div className="project-card p-4  flex flex-col justify-between fade-in border rounded-xl" style={style}>
-      <div className='flex flex-row justify-between items-center'>
-        <p className='font-semibold lg:text-xl text-lg'>{project.title}</p>
-        {project.date && <p className='font-semibold text-base'>{project.date}</p>}
-      </div>
-      <p className='text-gray-400'>{project.technologies}</p>
-      <p className='text-gray-300'>{project.description}</p>
-      {project.stats && <p className='text-gray-50'>{project.stats}</p>}
-      <div className='flex justify-between  pt-1'>
-      {project.github_link && <a target="_blank" href={project.github_link} className='hover:opacity-70 transition-transform duration-80 transform hover:scale-125'>
-          <Image src='/github.svg' width={30} height={30} alt="Github Link" />
-        </a> }
-        <div>
+    <div>
+      <Wrapper
+        href={mainHref}
+        target={mainHref ? '_blank' : undefined}
+        rel={mainHref ? 'noreferrer noopener' : undefined}
+        className="group block"
+        aria-label={mainHref ? `Open ${project.title} ${isLive ? 'live site' : 'GitHub'}` : undefined}
+      >
+        <div className={`relative w-full ${aspectClass} overflow-hidden rounded-2xl`}>
+          {project.image ? (
+            <Image
+              src={project.image}
+              alt={project.title}
+              fill
+              className="object-cover rounded-2xl transition-transform duration-500 group-hover:scale-[1.02] border-2 border-white"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+              priority={false}
+              unoptimized={project.image?.toLowerCase().endsWith('.gif')}
+            />
+          ) : (
+            <div className="absolute inset-0 bg-gradient-to-b from-neutral-800 to-neutral-950" />
+          )}
+
+          {/* Hover overlay indicating destination */}
+          {mainHref && (
+            <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+              <div className="flex items-center justify-center h-12 w-12 rounded-full bg-white/90 text-black shadow-md">
+                {isLive ? (
+                  <OpenInNewIcon fontSize="small" />
+                ) : (
+                  <Image src="/github.svg" alt="GitHub" width={20} height={20} />
+                )}
+              </div>
+            </div>
+          )}
 
         </div>
-        
-        <div>
+      </Wrapper>
 
+      <div className="mt-4">
+        <div className="flex items-center gap-3">
+          <h3 className="text-lg font-semibold text-white">{project.title}</h3>
         </div>
-        {project.live_link && <a target="_blank" href={project.live_link} className='flex flex-row border rounded p-1  hover:text-black hover:bg-white transition-colors duration-200'>
-          <p>Live Website:</p>
-          <OpenInNewIcon />
-        </a> }
+        {project.caption && (
+          <p className="mt-1 text-sm text-neutral-400">{project.caption}</p>
+        )}
       </div>
     </div>
   );
