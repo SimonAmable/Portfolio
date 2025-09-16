@@ -29,15 +29,24 @@ const Projects = () => {
       image: '/internshipseh.png',
       live_link: 'https://www.interncanada.com/',
       github_link: 'https://github.com/SimonAmable/INTERN-CANADA',
-      isWebsite: true,
+      isWebsite: false,
     },
     {
       title: 'MySuccessAutomation',
       caption:
-        'A tool to automate your job search and application process.',
+        'A open source pythontool to automate your job search and application process.',
       image: '/github.svg',
       live_link: '',
       github_link: 'https://github.com/SimonAmable/MySuccessAutomation',
+      isWebsite: false,
+    },
+    {
+      title: 'PocketBroker',
+      caption:
+        'A voice agent built on VAPI that manages cryptocurrency investments by analyzing real-time news and executing trades through the Kraken API.',
+      image: '/github.svg',
+      live_link: '',
+      github_link: 'https://github.com/matsevytyi/PocketBroker',
       isWebsite: false,
     },
     {

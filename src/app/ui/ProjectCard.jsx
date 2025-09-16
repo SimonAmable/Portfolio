@@ -24,7 +24,7 @@ const ProjectCard = ({ project }) => {
               src={project.image}
               alt={project.title}
               fill
-              className="object-cover rounded-2xl transition-transform duration-500 group-hover:scale-[1.02] border-2 border-white"
+              className={`${project.image === '/github.svg' ? 'object-contain p-8' : 'object-cover'} rounded-2xl transition-transform duration-500 group-hover:scale-[1.02] `}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
               priority={false}
               unoptimized={project.image?.toLowerCase().endsWith('.gif')}
@@ -40,7 +40,7 @@ const ProjectCard = ({ project }) => {
                 {isLive ? (
                   <OpenInNewIcon fontSize="small" />
                 ) : (
-                  <Image src="/github.svg" alt="GitHub" width={20} height={20} />
+                  <Image src="/github.svg" alt="GitHub"  className='invert' width={20} height={20} />
                 )}
               </div>
             </div>

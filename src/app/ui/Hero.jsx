@@ -2,7 +2,7 @@
 import React from 'react'
 import { FlipWords } from "@/components/ui/flip-words"
 import { BlurFade } from "@/components/magicui/blur-fade"
-import { ChevronDown } from "lucide-react"
+import { ArrowDown } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const Hero = () => {
@@ -16,7 +16,7 @@ const Hero = () => {
   ]
 
   return (
-    <section className="fade-up relative w-full px-6 pt-28  flex items-center justify-center text-white">
+    <section className="h-[100vh] fade-up relative w-full px-6 pt-28  flex items-center justify-center text-white">
       {/* Subtle spotlight behind text */}
       
 
@@ -28,21 +28,22 @@ const Hero = () => {
         </BlurFade>
         <BlurFade inView direction="up" delay={1}>
           <div className="mt-4 text-lg md:text-xl text-white/80 min-h-[3rem] md:min-h-[5rem] flex items-center justify-center">
-            <FlipWords words={words} duration={8000} className="px-0 text-white text-center" />
+            <FlipWords words={words} duration={5000} className="px-0 text-white text-center" />
           </div>
 
           {/* <p className="mt-4 text-base md:text-lg text-white/60">
             I'm currently working on learning agentic systems and building projects to help me learn.
           </p> */}
 
-          <p className="mt-4 text-base md:text-lg text-white/60">
+          {/* <p className="mt-4 text-base md:text-lg text-white/60">
             Scroll down to check out my latest projects.
-          </p>
-          <div className="mt-8">
-            <Button asChild className="bg-white/10 hover:bg-white/20 text-white border border-white/20 hover:border-white/30 px-6 py-3 rounded-full transition-all">
+          </p> */}
+          <div className="pt-[35vh]">
+            <Button asChild variant="secondary" className="">
               <a href="#projects" className="flex items-center gap-2">
                 View Projects
-                <ChevronDown className="w-4 h-4" />
+
+                <ArrowDown className="w-4 h-4 animate-bounce" />
               </a>  
             </Button>
           </div>

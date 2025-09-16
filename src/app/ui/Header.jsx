@@ -157,9 +157,9 @@ const Header = () => {
                       <DropdownMenuItem asChild>
                         <Link href="#projects" onClick={closeMobile} className="flex w-full items-center rounded-xl px-4 py-3 text-base font-semibold text-white hover:bg-white/10">Projects</Link>
                       </DropdownMenuItem>
-                      <DropdownMenuItem asChild>
+                      {/* <DropdownMenuItem asChild>
                         <Link href="/blog" onClick={closeMobile} className="flex w-full items-center rounded-xl px-4 py-3 text-base font-semibold text-white hover:bg-white/10">Blog</Link>
-                      </DropdownMenuItem>
+                      </DropdownMenuItem> */}
                     </DropdownMenuContent>
                   </DropdownMenu>
                 </div>
