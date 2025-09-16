@@ -43,7 +43,7 @@ const Projects = () => {
     {
       title: 'PocketBroker',
       caption:
-        'A voice agent built on VAPI that manages cryptocurrency investments by analyzing real-time news and executing trades through the Kraken API.',
+        'Hack the North 2025 - Created a voice agent built on the VAPI framework that manages cryptocurrency investments by analyzing real-time news on X via grok search, and executing real money trades through the Kraken API.',
       image: '/github.svg',
       live_link: '',
       github_link: 'https://github.com/matsevytyi/PocketBroker',
