@@ -39,7 +39,7 @@ const ContactPage = () => {
   return (
     <div className="flex w-full items-center justify-center py-16 px-4 bg-black">
       {submitted ? (
-        <div className="w-full max-w-md p-6 rounded-2xl border border-white/10 bg-black">
+        <div className="w-full max-w-md p-6 rounded-2xl bg-black">
           <div className="w-full text-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -65,7 +65,7 @@ const ContactPage = () => {
           </div>
         </div>
       ) : (
-        <div className="w-full max-w-md p-6 rounded-2xl border border-white/10 bg-black">
+        <div className="w-full max-w-md p-6 rounded-2xl bg-black">
           <div className="w-full">
             <h1 className="mb-4 text-2xl font-semibold text-white">Contact Me</h1>
             <form onSubmit={handleSubmit} className="flex flex-col gap-3">

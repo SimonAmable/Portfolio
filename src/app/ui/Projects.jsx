@@ -5,6 +5,15 @@ import { BlurFade } from "@/components/magicui/blur-fade";
 const Projects = () => {
   const projectItems = [
     {
+      title: 'Sora AI',
+      caption:
+        'An AI-powered Figma clone that allows users to create photoshop-level edits with text on a infinite canvas.',
+      image: '/edit.png',
+      live_link: 'https://pixelperfectai.vercel.app/',
+      github_link: '',
+      isWebsite: true,
+    },
+    {
       title: 'EzApply',
       caption:
         'A web app that streamlines the job application process for students by creating customized cover letters and resumes grounded with simple RAG with real user data.',

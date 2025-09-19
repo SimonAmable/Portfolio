@@ -24,7 +24,7 @@ const ProjectCard = ({ project }) => {
               src={project.image}
               alt={project.title}
               fill
-              className={`${project.image === '/github.svg' ? 'object-contain p-8' : 'object-cover'} rounded-2xl transition-transform duration-500 group-hover:scale-[1.02] `}
+              className={`${project.image === '/github.svg' ? 'object-contain p-8' : 'object-cover p-8'} rounded-2xl transition-transform duration-500 group-hover:scale-[1.02] `}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
               priority={false}
               unoptimized={project.image?.toLowerCase().endsWith('.gif')}
