@@ -5,11 +5,11 @@ import { BlurFade } from "@/components/magicui/blur-fade";
 const Projects = () => {
   const projectItems = [
     {
-      title: 'Sora AI',
+      title: 'Unican.AI',
       caption:
-        'An AI-powered Figma clone that allows users to create photoshop-level edits with text on a infinite canvas.',
-      image: '/edit.png',
-      live_link: 'https://pixelperfectai.vercel.app/',
+        'AI-powered design tool for creating advanced visual edits with text prompts on an infinite canvas. Think of it as a AS AI focused photoshop, canva, or figma for the web.',
+      image: '/edit4.png',
+      live_link: 'https://unican.ai/',
       github_link: '',
       isWebsite: true,
     },
